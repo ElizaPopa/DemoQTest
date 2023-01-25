@@ -12,7 +12,6 @@ public class Base {
     public ElementControl elementControl;
     public ItemsPage items;
 
-
     @BeforeMethod
     public void Initialize() {
         driver = new ChromeDriver();

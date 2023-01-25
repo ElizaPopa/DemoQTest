@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 import java.util.List;
 
 public class ItemsPage extends BasePage {
@@ -18,13 +17,7 @@ public class ItemsPage extends BasePage {
     private WebElement ninjaSilhouette;
     @FindBy(className = "added_to_cart wc-forward")
     private WebElement viewCart;
-    //css="a[href='https://cms.demo.katalon.com/cart']")
-
-//    @FindBy(className ="select2-selection select2-selection--single")
-//    private WebElement sortButton;
     List<WebElement> sortButton = driver.findElements(By.className("elect2-selection select2-selection--single"));
-
-    List<WebElement> elements = driver.findElements(By.cssSelector("a"));
 
     public ItemsPage(WebDriver driver) {
         super(driver);
@@ -56,5 +49,4 @@ public class ItemsPage extends BasePage {
         }
         return null;
     }
-    // add
 }

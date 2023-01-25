@@ -30,23 +30,4 @@ public class ElementControl {
         return element.isDisplayed();
     }
 
-    public void okAlert() {
-        driver.switchTo().alert().accept();
-    }
-
-    public void cancelAlert() {
-        driver.switchTo().alert().dismiss();
-    }
-
-    public String getTextFromAlert() {
-        return driver.switchTo().alert().getText();
-    }
-
-    public String getTextFromElement(WebElement element) {
-        return element.getText();
-    }
-
-    public String getTitleOfThePage() {
-        return driver.getTitle();
-    }
 }
